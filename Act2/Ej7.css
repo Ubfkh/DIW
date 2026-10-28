@@ -1,0 +1,9 @@
+.catalogo p {
+  background-color: #fff9c4;
+}
+
+/* El error está en que el espacio coge todos los p cuyo antecesor sea catalogo, si solo quieres los hijos directos tienes que usar > */
+
+.catalogo > p {
+  background-color: #fff9c4;
+}

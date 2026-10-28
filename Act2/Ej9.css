@@ -1,0 +1,9 @@
+.avisos h2 + p {
+  color: #c62828;
+}
+
+/* Solo coge el primero porque el + únicamente coge al hermano directo, si queremos coger a todos sus hermanos p, debemos usar la ~ */
+
+.avisos h2 ~ p {
+  color: #c62828;
+}

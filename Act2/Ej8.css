@@ -1,0 +1,9 @@
+.noticias h2 p {
+  font-weight: bold;
+}
+
+/* Esto no funciona, pues está cogiendo los descendientes de todos los h2 que desciendan de noticias, si queremos coger justo el p siguiente, tenemos que usar +, para seleccionar a su hermano directo */
+
+.noticias h2 + p {
+  font-weight: bold;
+}

@@ -1,0 +1,9 @@
+.producto > h2 ~ p {
+  background-color: #fff9c4;
+}
+
+/* El problema es que la virgulilla selecciona únicamente los hermanos del h2, pero no queremos eso, queremos coger el p que es hijo de detalle. Podemos coger directamente los hijos de detalle */
+
+.detalle p {
+    background-color: #fff9c4;
+}

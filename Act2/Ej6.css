@@ -1,0 +1,9 @@
+.catalogo > p {
+  color: #793327;
+}
+
+/* No funciona porque > coge únicamente los hijos directos de catalogo, pero no se fija en los hijos de sus hijos, el correcto sería */
+
+.catalogo p {
+    color: #793327;
+}
