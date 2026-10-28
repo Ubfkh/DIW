@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelMarket · Práctica de selectores</title>
+  <link rel="stylesheet" href="estilos.css">
+  <!-- ÚNICA hoja que puede editar el alumnado -->
+  <link rel="stylesheet" href="personalizacion.css">
+</head>
+<body>
+  <div class="sitio">
+    <header class="cabecera">
+      <p class="marca">PixelMarket</p>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a href="/inicio">Inicio</a>
+        <a href="/catalogo">Catálogo</a>
+        <a href="https://ayuda.pixelmarket.example/guias" target="_blank" rel="noopener noreferrer">Guías externas</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="presentacion" aria-labelledby="titulo-catalogo">
+        <h1 id="titulo-catalogo">Catálogo de recursos digitales</h1>
+        <p>Materiales para aprender diseño y desarrollo web.</p>
+        <div class="nota"><p>Esta nota es información secundaria, no la introducción.</p></div>
+        <p>Todos los recursos pueden consultarse en línea.</p>
+      </section>
+
+      <section class="catalogo" aria-labelledby="titulo-recursos">
+        <h2 id="titulo-recursos">Recursos destacados</h2>
+        <p class="ayuda">Explora los recursos disponibles.</p>
+        <div class="rejilla">
+          <article class="tarjeta destacado oferta" data-categoria="css" data-nivel="intermedio">
+            <span class="etiqueta">Recomendado</span>
+            <h3>CSS avanzado</h3>
+            <p>Aprende selectores y reglas de estilo.</p>
+            <div class="detalles"><p>Incluye prácticas guiadas.</p></div>
+            <p class="precio">19 €</p>
+            <a class="boton" href="/comprar/css-avanzado">Ver recurso</a>
+          </article>
+
+          <article class="tarjeta destacado" data-categoria="html" data-nivel="inicial">
+            <span class="etiqueta">Popular</span>
+            <h3>HTML semántico</h3>
+            <p>Estructura documentos accesibles.</p>
+            <div class="detalles"><p>Incluye ejemplos de etiquetas.</p></div>
+            <p class="precio">Gratis</p>
+            <a class="boton" href="/recursos/html-semantico.pdf" download>Descargar PDF</a>
+          </article>
+
+          <article class="tarjeta oferta" data-categoria="javascript" data-nivel="avanzado">
+            <span class="etiqueta">Descuento</span>
+            <h3>JavaScript moderno</h3>
+            <p>Domina la interacción en la web.</p>
+            <div class="detalles"><p>Incluye retos de programación.</p></div>
+            <p class="precio">29 €</p>
+            <a class="boton" href="/comprar/javascript">Ver recurso</a>
+          </article>
+
+          <article class="tarjeta" data-categoria="css" data-nivel="inicial">
+            <span class="etiqueta">Nuevo</span>
+            <h3>Primeros pasos con CSS</h3>
+            <p>Empieza desde cero con las hojas de estilo.</p>
+            <div class="detalles"><p>Incluye ejercicios básicos.</p></div>
+            <p class="precio">Gratis</p>
+            <a class="boton" href="/recursos/css-basico.pdf" download>Descargar PDF</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="avisos" aria-labelledby="titulo-avisos">
+        <h2 id="titulo-avisos">Avisos del catálogo</h2>
+        <p>Los precios pueden cambiar.</p>
+        <div class="interrupcion">Información adicional sobre pedidos.</div>
+        <p>Los materiales gratuitos no requieren pago.</p>
+        <p>Comprueba el formato antes de descargar.</p>
+      </section>
+
+      <section class="contacto" aria-labelledby="titulo-contacto">
+        <h2 id="titulo-contacto">Solicita información</h2>
+        <form action="/enviar" method="post">
+          <div class="campo"><label for="nombre">Nombre</label><input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required></div>
+          <div class="campo"><label for="correo">Correo electrónico</label><input id="correo" type="email" name="correo" placeholder="nombre@ejemplo.com" required></div>
+          <div class="campo"><label for="asunto">Asunto</label><input id="asunto" type="text" name="asunto" placeholder="Opcional"></div>
+          <div class="campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribe tu consulta"></textarea></div>
+          <button type="submit">Enviar consulta</button>
+        </form>
+      </section>
+    </main>
+    <footer class="pie"><p>PixelMarket · Ejercicio de selectores CSS</p></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* HOJA DEL ALUMNADO: escribe aquí tus reglas. No modifiques index.html ni estilos.css. */
+article p {
+    line-height: 1.9;
+}
+
+article > p {
+    color: #205c79;
+}
+
+article > h3 + p {
+    font-weight: bold;
+}
+
+.interrupcion ~ p {
+    color: #7a3389;
+}
+
+.tarjeta.destacado.oferta {
+    color: #df8a18;
+    border: 4px;
+}
+
+article[data-categoria="css"]{
+    background-color: #eff8ff;
+}
+
+article[data-nivel="inicial"]{
+    background-color: #d7f2df;
+}
+
+a[download]{
+    text-decoration: underline solid 2px;
+}
+
+a[href$=".pdf"] {
+  outline: 2px dashed #4d7f4d;
+  outline-offset: 3px;
+}
+
+a[href^="https:"]{
+    color: #a12966;
+}
+
+input[required]{
+    border: 2px solid #26804f;
+}
+
+input[type="email"]{
+    background-color: #fff4d6;
+}
+
+.presentacion > h1 + p {
+    font-size: 1.15rem;
+}
+
+.detalles p {
+    font-style: italic;
+}
